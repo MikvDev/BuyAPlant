@@ -17,3 +17,12 @@ O exercício tem como foco compreender:
 - sobreposição;
 - comportamento durante a rolagem;
 - responsividade.
+
+
+
+- um card de produto;
+- imagem do produto;
+- título;
+- descrição;
+- botão de compra;
+- conteúdo suficiente para gerar rolagem da página.

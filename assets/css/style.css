@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/static/Outfit-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+:root {
+   
+  /* --- Neutros e Backgrounds --- */
+  --bg-primary: #f3eee2;     /* Creme claro (Ótimo para o fundo da página) */
+  --bg-secondary: #e5dcc3;   /* Bege areia (Seções, cards ou inputs) */
+  --ui-light: #cfcfdb;       /* Cinza azulado claro (Bordas ou dividers) */
+
+  /* --- Tons Terrosos (Madeira e Vasos) --- */
+  --clay-light: #c3a775;     /* Bronze/Argila claro */
+  --clay-medium: #c8e1b5;    /* Verde pistache/Menta (Equilíbrio visual) */
+  --clay-dark: #679c46;      /* Verde folha (Destaques e ícones) */
+
+  /* --- Verdes Botânicos --- */
+  --forest-light: #6e9ba2;   /* Verde azulado/Eucalipto */
+  --forest-medium: #3e5f2c;  /* Verde musgo profundo (Botões primários) */
+  --forest-dark: #2f4225;    /* Verde floresta escuro (Textos ou Header) */
+
+  /* --- Acentos e Contraste --- */
+  --accent-warm: #a19fb5;    /* Lavanda acinzentado */
+  --accent-cool: #8f89a2;    /* Roxo suave/Sombra */
+  --accent-deep: #53515e;    /* Cinza arroxeado (Botões de hover) */
+
+  /* --- Textos e Profundidade --- */
+  --text-main: #1e292e;      /* Azul petróleo quase preto (Texto principal) */
+  --text-muted: #3f585f;     /* Cinza oceano (Textos secundários/descrições) */
+  --text-dark: #312f37;      /* Grafite (Títulos ou rodapé) */
+}
+
+html {
+    width: 100%;
+}
+header {
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    background-color: #A3A8A2;
+    top: 0;
+    
+    height: 90px;
+
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title {
+    text-align: center;
+    margin: 40px 0;
+}
+#hero {
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+#hero p {
+    margin-top: 20px;
+    width: 400px;
+}
+#hero button {
+    margin-top: 70px;
+    margin-right: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #598751;
+    transition: 0.2s ease-in-out;
+}
+
+#hero button:hover {
+    background-color: #2f4225;
+    transform: translateY(5px);
+}
+#hero p {
+    font-size: 20px;
+}
+#hero h1 {
+    font-size: 90px;
+}
+#hero-text {
+    text-align: start;
+}
+#hero-image img{
+    width: 700px;;
+    height: auto;
+    border-radius: 200px;
+}
+#menu-aside {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    
+}
+#menu-aside ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100%;
+}
+#products-section {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px;
+    
+
+}
+.card-product {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card {
+    background-color:var(--); 
+    max-height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--forest-medium);
+    color: white;
+    cursor: pointer;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.card img {
+    
+    height: 300px;
+}
+.badge {
+    position: absolute;
+    background-color: brown;
+    top: 20px;
+    left: 195px;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    color: white;
+}
+.help-btn{
+    position: fixed;
+    top: 800px;
+    left: 1700px;
+    cursor: pointer;
+    
+}
