@@ -47,16 +47,20 @@ header {
     align-items: center;
     justify-content: space-around;
     position: sticky;
-    background-color: #A3A8A2;
+    background-color: #abc9a57b;
     top: 0;
     
     height: 90px;
 
 }
 header a {
-    color: white;
+    color: var(--forest-dark);
     text-decoration: none;
     font-size: 24px;
+    transition: 0.3s ease-in-out;
+}
+header a:hover {
+    color: var(--clay-dark);
 }
 ul {
     display: flex;
